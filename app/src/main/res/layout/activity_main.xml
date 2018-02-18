@@ -51,7 +51,6 @@
             android:layout_below="@+id/textThree"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="@dimen/medium"
-            android:autoLink="all"
             android:drawableLeft="@drawable/facebook"
             android:drawablePadding="@dimen/small"
             android:gravity="center"
