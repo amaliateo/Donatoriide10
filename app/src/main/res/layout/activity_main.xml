@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/small"
+    card_view:cardBackgroundColor="#BBDEFB"
+    card_view:cardCornerRadius="20dp"
+    card_view:cardElevation="24dp"
+    tools:context="com.example.android.donatoriide10.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/sigla"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/small"
+            android:src="@drawable/rsz_unusigla"
+
+            />
+
+        <TextView
+            android:id="@+id/textOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/small"
+            android:layout_toEndOf="@id/sigla"
+            android:layout_toRightOf="@id/sigla"
+            android:paddingTop="@dimen/small"
+            android:text="@string/termenLung"
+            android:textAppearance="@style/StyleOne" />
+
+        <TextView
+            android:id="@+id/textThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sigla"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/large"
+            android:text="Donatorii de 10"
+            android:textAppearance="@style/StyleFour" />
+
+        <TextView
+            android:id="@+id/textTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textThree"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/medium"
+            android:autoLink="all"
+            android:drawableLeft="@drawable/facebook"
+            android:drawablePadding="@dimen/small"
+            android:gravity="center"
+            android:onClick="facebookPage"
+            android:text="@string/urmareste" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textFour"
+            android:layout_margin="@dimen/small"
+            android:gravity="center"
+            android:text="@string/fiiDonator"
+            android:textAppearance="@style/StyleThree" />
+
+        <TextView
+            android:id="@+id/textFour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/linear"
+            android:layout_centerHorizontal="true"
+            android:autoLink="web"
+            android:text="@string/contribuie" />
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/copii_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/small"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/rsz_copii" />
+
+            <ImageView
+                android:id="@+id/ovidiusicopii_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/small"
+                android:layout_marginRight="@dimen/small"
+                android:layout_marginTop="@dimen/small"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/rsz_ovidiusicopii" />
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+
+
+
